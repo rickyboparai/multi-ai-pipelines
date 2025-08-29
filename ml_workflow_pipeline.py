@@ -100,7 +100,7 @@ def run_logistic_regression(train_df, test_df, parent_run_id):
         )
 
 
-# Run both models in parallel under one parent run
+# Run both models  under one parent run
 with mlflow.start_run(run_name="basket_and_purchase_models") as parent_run:
     parent_run_id = parent_run.info.run_id
     
